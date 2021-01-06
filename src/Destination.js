@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import MapboxGL from '@mapbox/react-native-mapbox-gl';
+import MapboxGL from '@react-native-mapbox-gl/maps';
 
 const styles = StyleSheet.create({
   annotationContainer: {
@@ -27,10 +27,10 @@ const Destination = ({coords}) => (
     id="pointAnnotation"
     coordinate={[coords.longitude, coords.latitude]}
   >
-    <View style={styles.annotationContainer}>
+    {/* <View style={styles.annotationContainer}>
       <View style={styles.annotationFill} />
     </View>
-    <MapboxGL.Callout title="Look! An annotation!" />
+    <MapboxGL.Callout title="Look! An annotation!" /> */}
   </MapboxGL.PointAnnotation>
 );
 
