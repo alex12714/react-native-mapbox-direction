@@ -1,21 +1,19 @@
 // @flow
 import React from 'react';
-import MapboxGL from '@mapbox/react-native-mapbox-gl';
+import MapboxGL from '@react-native-mapbox-gl/maps';
 
 const Route = ({ route, lineColor }) => {
-  const layerStyles = MapboxGL.StyleSheet.create({
-    route: {
-      lineColor,
-      lineWidth: 6,
-      lineOpacity: 0.5,
-    },
-  });
+  const layerStyles = {
+    lineColor,
+    lineWidth: 6,
+    lineOpacity: 0.8,
+  }
   
   return (
     <MapboxGL.ShapeSource id="routeSource" shape={route}>
       <MapboxGL.LineLayer
         id="routeFill"
-        style={layerStyles.route}
+        style={layerStyles}
       />
     </MapboxGL.ShapeSource>
   );

@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNMapboxDirection
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/author/RNMapboxDirection.git"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
@@ -18,7 +18,5 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   #s.dependency "others"
-
+åç
 end
-
-  
